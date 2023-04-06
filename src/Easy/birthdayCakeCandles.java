@@ -14,12 +14,14 @@ public class birthdayCakeCandles {
 	}
 	
 	public static int birthdayCakeCandles(List<Integer> candles) {
-		
+//		Initialising variables
 		int count = 0;
 		
+//		Sorting candles and identifying tallest element
 		Collections.sort(candles);
 		int tallest = candles.get(candles.size()-1);
 	    
+//		incrementing if element in candles is same as tallest
 		for (int i=0; i<candles.size(); i++) {
 			if (candles.get(i) == tallest) {
 				count++;
