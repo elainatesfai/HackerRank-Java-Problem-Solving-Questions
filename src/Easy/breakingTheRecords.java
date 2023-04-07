@@ -16,20 +16,22 @@ public class breakingTheRecords {
 	}
 	
 	public static List<Integer> breakingRecords(List<Integer> scores) {
-	    
+//	    Initialise variables
 		int highest = scores.get(0);
 		int lowest = scores.get(0);
-		
 		int hCount = 0;
 		int lCount = 0;
 		
+//		incrementing each element in scores
 		for (int i = 0; i < scores.size(); i++) {
 			
+//			if current is bigger than highest, increment and change highest
 			if (scores.get(i) > highest ) {
 				highest = scores.get(i);
 				hCount++;
 			}
 			
+//			i current is lower than lowest, increment and change lowest
 			if (scores.get(i) < lowest ) {
 				lowest = scores.get(i);
 				lCount++;
@@ -37,9 +39,9 @@ public class breakingTheRecords {
 			
 		}
 		
+//		create variable that stores the hCount and lCount
 		List<Integer> records = new ArrayList<Integer>(Arrays.asList(hCount, lCount));
 		return records;
-
     }
 
 }
