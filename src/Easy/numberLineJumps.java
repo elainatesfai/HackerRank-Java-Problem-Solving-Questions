@@ -10,8 +10,8 @@ public class numberLineJumps {
 	//		System.out.println(kangaroo(3, 3, 4, 1));
 		
 //		Should return "YES"
-	//		System.out.println(kangaroo(3, 2, 5, 1));
-			System.out.println(kangaroo(0, 3, 4, 2));
+			System.out.println(kangaroo(3, 2, 5, 1));
+//			System.out.println(kangaroo(0, 3, 4, 2));
 
 	}
 	
@@ -20,11 +20,18 @@ public class numberLineJumps {
 //		checks if rate1 is bigger than rate2
 //		also if difference between position2 and position1 is divisible by the difference of rate1 minus rate2
 //		This checks if they meet at the same jump
+		
 		if ((v1>v2) && (x2-x1)%(v1-v2) == 0) {
+			
+			int jumps = (x2 - x1) / (v1 - v2);
+			System.out.println(jumps);
+			
 			return "YES";
 		}
 		
 	    return "NO";
+		
+	    
     }
 
 }
