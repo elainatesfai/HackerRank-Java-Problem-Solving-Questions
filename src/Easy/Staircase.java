@@ -2,13 +2,10 @@ package Easy;
 
 import java.util.Collections;
 
-public class Staircase {
+public class staircase {
 
 	public static void main(String[] args) {
-		
-
 		staircase(4);
-
 	}
 	
 	public static void staircase(int n) {

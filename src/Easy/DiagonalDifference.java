@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class DiagonalDifference {
+public class diagonalDifference {
 
 	public static void main(String[] args) {
 		

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class SubarrayDivision {
+public class subarrayDivision {
 	
 	public static void main(String[] args) {
 		//	Initialise sample input 1 variables
